@@ -1,0 +1,51 @@
+img{
+    height: 280px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.card{
+    height: 30vh;
+    width: 220px;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    margin-bottom: 1.6em;
+    background-color: #6e1001;
+    border-radius: 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(233, 214, 164, 0.5);
+    border-radius: 10px;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.overlay-img{
+    width: 50px;
+    height: 50px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+    .loopitem{
+        width: 240px;
+    }
+
+
+} 

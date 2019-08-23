@@ -1,0 +1,46 @@
+<div class="container cart-container">
+  <div class="col-lg-9">
+    <p class="display-4">You currently have {{totalAmount()}} item(s) in your basket</p>
+  </div>
+  <div class="row">
+    <div class="card" *ngFor="let movie of cartService.getCartItems()">
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <img class="img-fluid" [src]="movie.imageUrl">
+          </div>
+          <div class="col-10">
+            <h6 class="card-text"> {{movie.name}}</h6>
+            <h3 class="display-2">{{movie.price | currency: "SEK "}}</h3>
+            <button class="btn btn-danger" (click)="cartService.deleteFromCart(movie.id)">Delete from Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 totalPrice">
+      <h2 class="display-1">Total Price: {{ totalPrice() | currency: "SEK " }}</h2>
+    </div>
+  </div>
+  <form action="#" [formGroup]="profileForm" (ngSubmit)="sendOrder()">
+    <div class="row">
+      <div class="form-group col-md-6 col-lg-12">
+        <label for="firstname" class="form-label">First Name</label>
+        <input id="firstname" type="text" name="first-name" placeholder="Enter you first name" class="form-control form-control-lg">
+      </div>
+      <div class="form-group col-md-6 col-lg-12">
+        <label for="lastname" class="form-label">Last Name</label>
+        <input id="lastname" type="text" name="last-name" placeholder="Enter your last name" class="form-control form-control-lg">
+      </div>
+      <div class="form-group col-md-6 col-lg-12">
+        <label for="email" class="form-label">Email Address</label>
+        <input id="email" name="email" type="text" placeholder="Enter your email address" formControlName="email"
+          class="form-control form-control-lg">
+      </div>
+    </div>
+    <div class="buttons">
+      <button [disabled]="!profileForm.valid" class="btn btn-template home"><a routerLink="/" routerLinkActive="active">Back to Shop</a></button>
+      <button [disabled]="!profileForm.valid" type="submit" class="btn btn-template checkout">Buy Product(s)</button>
+    </div>
+  </form>
+
+</div>

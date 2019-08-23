@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Sarina&display=swap');
+
+.jumbotron{
+    background-image: url("../../../assets/images/Hero-img.png");
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+h1{
+    color: #781101;
+    text-shadow: 4px -2px 5px #E9D6A4, 4px -2px 10px #6e1001;
+    font-family: "Sarina", cursive;
+}

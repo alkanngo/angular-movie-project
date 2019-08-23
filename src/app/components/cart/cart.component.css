@@ -1,0 +1,38 @@
+.card{
+    width:80vw
+}
+
+.cart-container{
+ background-color: white;
+ border-radius: 1%;
+}
+
+img{
+    width: 100%;
+    height: 280px;
+}
+
+.totalPrice{
+    margin-bottom: 5%;
+}
+
+form{
+    margin-bottom: 5%;
+}
+
+.buttons{
+    padding-bottom: 5%;
+}
+
+.checkout{
+    background-color: #E9D6A4;
+}
+
+.home{
+    background-color: #3C444D;
+    margin-right: 2%;
+}
+
+a{
+    color: azure;
+}

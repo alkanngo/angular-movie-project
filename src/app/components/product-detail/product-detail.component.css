@@ -1,0 +1,38 @@
+.modal-content{
+    width:100vw;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+.modal-body{
+    background: linear-gradient(180deg, rgba(60, 68, 77, 0) 0%, #3C444D 100%);
+}
+
+h4, h6{
+    color: #E9D6A4;
+    text-decoration: underline;
+}
+
+h3, blockquote, h5 {
+    color: #ffffff;
+}
+
+h5{
+    opacity: 0.7;
+}
+
+.blockquote{
+    margin:2% 0 7% 0;
+}
+
+.close{
+    padding-bottom: 30%;
+}
+.btn{
+    background-color: #E9D6A4;
+}
+
+.added{
+    background-color: #3C444D;
+}
